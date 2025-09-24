@@ -87,7 +87,7 @@ programa
 				hpboss=hpboss-artshy
 				escrevaparado("Ele ficou com "+hpboss+" de HP\n Agora ele esta preste a atacar voce\n Digite um numero de 1 a 5 pra nao levar dano dele!",0)
 				leia(num)
-				sorte=u.sorteia(1, 3)
+				sorte=u.sorteia(1, 5)
 			se(num==sorte){
 				escrevaparado("Voce acertou; ele errou o ataque sua vez agora!",0)
 				}senao{
@@ -354,11 +354,13 @@ programa
 			}
 				se(hpshy<0){
 					perdedor()
+					pare
 				}
 				se(hpboss3<0){
 					escrevaparado("Voce derrotou o boss,\nAgora sera a vez do proximo boss!",0)
 					escrevaparado("tk",0)
 					vencedor()
+					pare
 				}
 		}
 	}
@@ -646,9 +648,11 @@ programa
 			}
 				se(hpaizen<0){
 					perdedor()
+					pare
 				}
 				se(hpboss3<0){
 					vencedor()
+					pare
 				}
 		}
 	}
@@ -923,9 +927,11 @@ programa
 			}
 				se(hpgelado<0){
 					perdedor()
+					pare
 				}
 				se(hpboss3<0){
 					vencedor()
+					pare
 				}
 		}
 	}
@@ -1208,9 +1214,11 @@ programa
 			}
 				se(hpjhomsom<0){
 					perdedor()
+					pare
 				}
 				se(hpboss3<0){
 					vencedor()
+					pare
 				}
 		}
 	}
@@ -1232,6 +1240,7 @@ programa
 			credtos()
 		}
 		funcao credtos(){
-			escrevaparado("CODIGO:Carlos Eduardo! 90%\nHISTORIA:Luccas! CODIGO! 5%\nkAYO:FUNÇAO! CODIGO! 5%\nRaylan: apresentaçao!",0)
+			escrevaparado("\n\n\n\n\nCODIGO:Carlos Eduardo! 90%\nHISTORIA:Luccas! CODIGO! 5%\nkAYO:FUNÇAO! CODIGO! 5%\nRaylan: apresentaçao!",0)
+			
 		}
 }
