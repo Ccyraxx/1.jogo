@@ -51,7 +51,8 @@ programa
 		}
 	}
 	funcao personagens(){
-		
+
+		limpa()
 			inteiro hpshy=300, artshy= 35
 			inteiro hpaizen=650, artaizen=60
 			inteiro hpgelado=600,artgelado=65
@@ -66,7 +67,6 @@ programa
 	funcao nomes(){
 		escrevaparado("\n1-Shy\n2-aizen\n3-gelado\n4-jhomsom\n",0)
 	}
-	
 	funcao batalhasbossshy(){
 
 			inteiro hpshy=300, artshy= 35
@@ -77,8 +77,10 @@ programa
 				escrevaparado("voce esta numa batalha!",0)
 
 		enquanto(hpboss>0){
+			limpa()
 
 			cadeia resposta
+				escrevaparado("\nVoce escolheu a Shy!",0)
 				escrevaparado("\n1-Ataque normal\n2-Fugir\n3-Ataque Especial\n",0)
 				leia(escolhe)
 				
